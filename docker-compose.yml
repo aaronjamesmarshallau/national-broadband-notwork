@@ -1,0 +1,10 @@
+version: "3.2"
+services:
+  database:
+    image: postgres:12-alpine
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=notwork
+      - POSTGRES_PASSWORD=test123
+      - POSTGRES_DB=notwork
